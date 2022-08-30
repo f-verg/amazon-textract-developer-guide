@@ -4,7 +4,7 @@ Starts the asynchronous detection of text in a document\. Amazon Textract can de
 
  `StartDocumentTextDetection` can analyze text in documents that are in JPEG, PNG, and PDF format\. The documents are stored in an Amazon S3 bucket\. Use [DocumentLocation](API_DocumentLocation.md) to specify the bucket name and file name of the document\. 
 
- `StartTextDetection` returns a job identifier \(`JobId`\) that you use to get the results of the operation\. When text detection is finished, Amazon Textract publishes a completion status to the Amazon Simple Notification Service \(Amazon SNS\) topic that you specify in `NotificationChannel`\. To get the results of the text detection operation, first check that the status value published to the Amazon SNS topic is `SUCCEEDED`\. If so, call [GetDocumentTextDetection](API_GetDocumentTextDetection.md), and pass the job identifier \(`JobId`\) from the initial call to `StartDocumentTextDetection`\.
+ `StartDocumentTextDetection` returns a job identifier \(`JobId`\) that you use to get the results of the operation\. When text detection is finished, Amazon Textract publishes a completion status to the Amazon Simple Notification Service \(Amazon SNS\) topic that you specify in `NotificationChannel`\. To get the results of the text detection operation, first check that the status value published to the Amazon SNS topic is `SUCCEEDED`\. If so, call [GetDocumentTextDetection](API_GetDocumentTextDetection.md), and pass the job identifier \(`JobId`\) from the initial call to `StartDocumentTextDetection`\.
 
 For more information, see [Document Text Detection](https://docs.aws.amazon.com/textract/latest/dg/how-it-works-detecting.html)\.
 
